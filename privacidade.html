@@ -1,1 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Eu Amo, Eu Cuido</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8f9ff;
+      color: #333;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1F41BB, #87CDE9);
+      color: white;
+      padding: 40px 24px 32px;
+      margin: 0 -16px 32px;
+      text-align: center;
+    }
+
+    header .shield { font-size: 48px; margin-bottom: 12px; }
+    header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+    header p { font-size: 14px; opacity: 0.85; }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #2e7d32;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #9ca3af;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    details {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    .icon-wrap {
+      width: 38px;
+      height: 38px;
+      background: #eef2ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .summary-text { flex: 1; }
+    .art { font-size: 10px; font-weight: 700; color: #1F41BB; letter-spacing: 0.5px; text-transform: uppercase; }
+    .titulo { font-size: 14px; font-weight: 600; color: #1f2937; margin-top: 2px; }
+    .chevron { font-size: 14px; color: #1F41BB; transition: transform 0.2s; }
+    details[open] .chevron { transform: rotate(180deg); }
+
+    .body {
+      padding: 0 16px 16px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .body p {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.7;
+      margin-top: 12px;
+      white-space: pre-line;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .nav-link {
+      display: block;
+      text-align: center;
+      margin-top: 24px;
+      color: #1F41BB;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="shield">🛡️</div>
+  <h1>Política de Privacidade</h1>
+  <p>Eu Amo, Eu Cuido — Zeladoria Urbana</p>
+</header>
+
+<div class="badges">
+  <span class="badge">✅ Sem rastreamento</span>
+  <span class="badge">✅ Sem venda de dados</span>
+  <span class="badge">✅ LGPD compliant</span>
+</div>
+
+<p class="section-label">Detalhamento completo</p>
+
+<details>
+  <summary>
+    <div class="icon-wrap">👤</div>
+    <div class="summary-text">
+      <div class="art">Art. 1</div>
+      <div class="titulo">Coleta de Dados Pessoais</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018), coletamos apenas os dados estritamente necessários:
+
+• Nome completo: para identificação nas solicitações;
+• Número de telefone: utilizado como login único por cidade;
+• Cidade de residência: necessário para o correto isolamento dos dados entre municípios;
+• Senha (criptografada): armazenada exclusivamente em formato hash seguro (bcrypt).
+
+Não coletamos e-mail, CPF, data de nascimento ou quaisquer outros dados sensíveis.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">📍</div>
+    <div class="summary-text">
+      <div class="art">Art. 2</div>
+      <div class="titulo">Uso da Localização (GPS)</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>O aplicativo solicita permissão para acessar sua localização geográfica exata exclusivamente no momento em que você cria uma nova solicitação de zeladoria urbana.
+
+• Não rastreamos sua localização em segundo plano;
+• Não armazenamos histórico de deslocamentos;
+• Você pode negar a permissão de GPS e informar o endereço manualmente a qualquer momento.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">📷</div>
+    <div class="summary-text">
+      <div class="art">Art. 3</div>
+      <div class="titulo">Uso da Câmera e Imagens</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>As fotografias capturadas pela câmera do seu dispositivo são enviadas de forma segura para nossos servidores e anexadas à sua solicitação.
+
+• Não acessamos sua galeria de fotos privada;
+• As imagens são armazenadas em servidor seguro (Amazon AWS S3);
+• As fotos são utilizadas exclusivamente para documentar e resolver o problema reportado.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">🔔</div>
+    <div class="summary-text">
+      <div class="art">Art. 4</div>
+      <div class="titulo">Notificações Push</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Com sua permissão, enviamos notificações para mantê-lo informado sobre o andamento das suas solicitações.
+
+• As notificações são enviadas exclusivamente sobre as suas próprias solicitações;
+• Você pode desativar as notificações a qualquer momento nas configurações do dispositivo;
+• Não enviamos notificações de marketing ou publicidade.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">🤝</div>
+    <div class="summary-text">
+      <div class="art">Art. 5</div>
+      <div class="titulo">Compartilhamento de Dados</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Seus dados são compartilhados de forma restrita apenas com:
+
+• Prefeitura Municipal da sua cidade: funcionários têm acesso às solicitações para fins de atendimento;
+• Amazon AWS S3: serviço de armazenamento de imagens;
+• Twilio (opcional): serviço de comunicação por SMS utilizado pela prefeitura.
+
+Não vendemos, alugamos ou comercializamos seus dados com terceiros.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">🏙️</div>
+    <div class="summary-text">
+      <div class="art">Art. 6</div>
+      <div class="titulo">Isolamento de Dados por Cidade</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>O sistema opera com arquitetura multi-tenant — múltiplas cidades compartilham a infraestrutura, porém com isolamento rigoroso de dados.
+
+• Os dados de uma cidade jamais são acessados por outra prefeitura;
+• Funcionários têm acesso somente às solicitações da sua própria cidade;
+• O isolamento é garantido por regras no servidor, não apenas na interface.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">🔐</div>
+    <div class="summary-text">
+      <div class="art">Art. 7</div>
+      <div class="titulo">Segurança dos Dados</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Adotamos medidas técnicas para proteger seus dados:
+
+• Senhas armazenadas com hash bcrypt (irreversível);
+• Comunicação protegida por HTTPS/TLS;
+• Controle de acesso por perfil (Cidadão, Funcionário, Gestor, Super Admin);
+• Infraestrutura hospedada no Railway com backups automáticos.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">📋</div>
+    <div class="summary-text">
+      <div class="art">Art. 8</div>
+      <div class="titulo">Seus Direitos (LGPD)</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Conforme a LGPD, você possui os seguintes direitos:
+
+• Acesso: solicitar quais dados possuímos sobre você;
+• Correção: atualizar dados incorretos;
+• Eliminação: solicitar a exclusão permanente da sua conta;
+• Revogação de consentimento: retirar permissões a qualquer momento.
+
+Para exercer seus direitos, utilize a opção "Excluir minha conta" no seu Perfil dentro do aplicativo.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">🗑️</div>
+    <div class="summary-text">
+      <div class="art">Art. 9</div>
+      <div class="titulo">Retenção e Exclusão de Dados</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>• Dados da conta: mantidos enquanto a conta estiver ativa;
+• Exclusão de conta: ao solicitar, seus dados pessoais são permanentemente removidos;
+• As solicitações podem ser mantidas de forma anonimizada para fins estatísticos da prefeitura.
+
+A exclusão pode ser solicitada diretamente na tela de Perfil do aplicativo.</p></div>
+</details>
+
+<details>
+  <summary>
+    <div class="icon-wrap">✉️</div>
+    <div class="summary-text">
+      <div class="art">Art. 10</div>
+      <div class="titulo">Contato e Encarregado de Dados</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Para dúvidas, solicitações ou reclamações relacionadas ao tratamento dos seus dados, entre em contato com a prefeitura do seu município.
+
+O sistema "Eu Amo, Eu Cuido" é operado como plataforma B2G, sendo cada prefeitura contratante a controladora dos dados dos seus cidadãos, nos termos da LGPD.
+
+Esta política pode ser atualizada periodicamente. Alterações relevantes serão comunicadas via notificação no aplicativo.</p></div>
+</details>
+
+<a class="nav-link" href="termos.html">📄 Ver Termos de Uso →</a>
+
+<footer>
+  <p>Última atualização: 07 de Abril de 2026</p>
+  <p style="margin-top:6px;">Eu Amo, Eu Cuido — Política de Privacidade v2.0</p>
+</footer>
+
+</body>
+</html>
