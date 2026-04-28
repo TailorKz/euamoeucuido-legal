@@ -1,1 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos de Uso — Eu Amo Eu Cuido</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8f9ff;
+      color: #333;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1F41BB, #87CDE9);
+      color: white;
+      padding: 40px 24px 32px;
+      margin: 0 -16px 32px;
+      text-align: center;
+    }
+
+    header .icon { font-size: 48px; margin-bottom: 12px; }
+    header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+    header p { font-size: 14px; opacity: 0.85; }
+
+    .legenda {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .legenda strong {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      color: #9ca3af;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .legenda-items { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .legenda-dot {
+      width: 14px; height: 14px;
+      border-radius: 4px;
+      border: 1px solid #e5e7eb;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #9ca3af;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    details {
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      border-width: 1px;
+      border-style: solid;
+    }
+
+    details.normal { background: white; border-color: #e5e7eb; }
+    details.aviso  { background: #fffbf5; border-color: #ffe0b2; }
+    details.proibicao { background: #fff8f8; border-color: #ffcdd2; }
+
+    summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    .icon-wrap {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+
+    .normal .icon-wrap   { background: #eef2ff; }
+    .aviso .icon-wrap    { background: #fff3e0; }
+    .proibicao .icon-wrap { background: #ffebee; }
+
+    .summary-text { flex: 1; }
+
+    .clausula {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.5px; text-transform: uppercase;
+    }
+
+    .normal .clausula    { color: #1F41BB; }
+    .aviso .clausula     { color: #e65100; }
+    .proibicao .clausula { color: #c62828; }
+
+    .titulo { font-size: 14px; font-weight: 600; color: #1f2937; margin-top: 2px; }
+
+    .chevron { font-size: 14px; transition: transform 0.2s; }
+    .normal .chevron    { color: #1F41BB; }
+    .aviso .chevron     { color: #e65100; }
+    .proibicao .chevron { color: #c62828; }
+    details[open] .chevron { transform: rotate(180deg); }
+
+    .body {
+      padding: 0 16px 16px;
+      border-top-width: 1px;
+      border-top-style: solid;
+    }
+
+    .normal .body    { border-top-color: #e5e7eb; }
+    .aviso .body     { border-top-color: #ffe0b2; }
+    .proibicao .body { border-top-color: #ffcdd2; }
+
+    .body p {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.7;
+      margin-top: 12px;
+      white-space: pre-line;
+    }
+
+    .aviso-aceitacao {
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      border-radius: 10px;
+      padding: 14px;
+      margin-top: 24px;
+      font-size: 12px;
+      color: #3730a3;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .nav-link {
+      display: block;
+      text-align: center;
+      margin-top: 24px;
+      color: #1F41BB;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="icon">📄</div>
+  <h1>Termos de Uso</h1>
+  <p>Eu Amo, Eu Cuido — Zeladoria Urbana</p>
+</header>
+
+<div class="legenda">
+  <strong>Legenda</strong>
+  <div class="legenda-items">
+    <span><span class="legenda-dot" style="background:#e3f2fd;"></span>Cláusula padrão</span>
+    <span><span class="legenda-dot" style="background:#fff3e0;"></span>Atenção</span>
+    <span><span class="legenda-dot" style="background:#ffebee;"></span>Proibição</span>
+  </div>
+</div>
+
+<p class="section-label">Cláusulas do contrato</p>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">✅</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 1</div>
+      <div class="titulo">Aceitação dos Termos</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Ao baixar, instalar, acessar ou utilizar o aplicativo "Eu Amo, Eu Cuido", você declara ter lido, compreendido e concordado integralmente com estes Termos de Uso e com a nossa Política de Privacidade.
+
+• Caso não concorde com qualquer parte destes termos, não utilize o aplicativo;
+• O uso continuado implica na aceitação de eventuais alterações;
+• Alterações relevantes serão comunicadas via notificação push;
+• Estes termos são regidos pela legislação brasileira.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">📱</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 2</div>
+      <div class="titulo">Descrição do Serviço</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>O "Eu Amo, Eu Cuido" é uma plataforma digital B2G (Business-to-Government) de zeladoria urbana que conecta cidadãos e prefeituras municipais. O serviço permite:
+
+• Reportar problemas de infraestrutura urbana (buracos, iluminação, limpeza, saneamento etc.);
+• Acompanhar o status de atendimento em tempo real;
+• Receber notificações sobre respostas e atualizações da prefeitura;
+• Comunicar-se diretamente com a equipe responsável pelo atendimento.
+
+O sistema opera com isolamento total de dados por município.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">👤</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 3</div>
+      <div class="titulo">Cadastro e Acesso</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Para utilizar o aplicativo, é necessário criar uma conta com informações verdadeiras:
+
+• O cadastro é vinculado ao número de telefone e à cidade do cidadão;
+• Cada número de telefone permite apenas uma conta por município;
+• Você é responsável pela confidencialidade da sua senha;
+• O compartilhamento de conta com terceiros não é permitido;
+• Contas de funcionários e gestores são criadas exclusivamente pela prefeitura municipal.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">👍</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 4</div>
+      <div class="titulo">Uso Correto do Aplicativo</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>O aplicativo deve ser utilizado exclusivamente para reportar problemas reais de infraestrutura e zeladoria urbana no município cadastrado.
+
+Usos permitidos:
+• Reportar problemas visíveis no espaço público da sua cidade;
+• Acompanhar e interagir com suas próprias solicitações;
+• Utilizar o GPS e câmera para documentar o problema com precisão.</p></div>
+</details>
+
+<details class="proibicao">
+  <summary>
+    <div class="icon-wrap">🚫</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 5</div>
+      <div class="titulo">Condutas Proibidas</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>É estritamente proibido, sob pena de banimento imediato:
+
+• Fazer reportes falsos, fictícios ou com localização incorreta propositalmente;
+• Enviar imagens impróprias, ofensivas, com nudez ou conteúdo violento;
+• Utilizar linguagem ofensiva, discriminatória ou de assédio;
+• Criar múltiplas contas para burlar restrições;
+• Tentar acessar dados de outros usuários ou de outros municípios;
+• Usar o aplicativo para fins comerciais, políticos ou eleitorais;
+• Realizar engenharia reversa ou qualquer ataque à infraestrutura.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">☁️</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 6</div>
+      <div class="titulo">Conteúdo Enviado pelo Usuário</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Ao enviar fotos, textos e localizações, você declara que:
+
+• O conteúdo é verídico e relacionado a um problema real no espaço público;
+• As imagens não violam direitos de imagem de terceiros;
+• Você concede à prefeitura o direito de usar o conteúdo para fins de atendimento;
+• Conteúdos que violem estas regras poderão ser removidos sem aviso prévio.</p></div>
+</details>
+
+<details class="aviso">
+  <summary>
+    <div class="icon-wrap">🔧</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 7</div>
+      <div class="titulo">Responsabilidades da Plataforma</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>A plataforma se compromete a manter o sistema disponível e proteger os dados conforme a LGPD.
+
+A plataforma não se responsabiliza por:
+• O prazo ou efetividade do atendimento pela prefeitura (responsabilidade do município);
+• Indisponibilidades temporárias por manutenção ou falhas técnicas;
+• Danos decorrentes do uso indevido do aplicativo pelo usuário.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">👥</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 8</div>
+      <div class="titulo">Perfis de Acesso</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>O sistema possui quatro perfis com permissões distintas:
+
+• Cidadão: pode criar solicitações, acompanhar status e receber notificações;
+• Funcionário: atualiza status, registra resposta oficial e anexa foto de resolução;
+• Gestor de Setor: visão gerencial do setor;
+• Super Admin: acesso completo à configuração da prefeitura.
+
+Cada perfil é configurado pela prefeitura e não pode ser alterado pelo usuário.</p></div>
+</details>
+
+<details class="aviso">
+  <summary>
+    <div class="icon-wrap">⚙️</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 9</div>
+      <div class="titulo">Modificações e Descontinuação</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Reservamo-nos o direito de modificar, atualizar ou descontinuar o aplicativo a qualquer momento.
+
+Em caso de descontinuação em determinado município (por encerramento do contrato com a prefeitura), os dados serão mantidos pelo período previsto em lei e você será notificado com antecedência razoável.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">🎖️</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 10</div>
+      <div class="titulo">Propriedade Intelectual</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Todo o conteúdo, código, design, marca e funcionalidades do aplicativo são de propriedade exclusiva dos seus desenvolvedores, protegidos por leis de propriedade intelectual.
+
+• É proibida a reprodução ou cópia do aplicativo sem autorização;
+• O conteúdo gerado pelos usuários permanece de propriedade do usuário, com licença de uso concedida à plataforma para fins do serviço.</p></div>
+</details>
+
+<details class="normal">
+  <summary>
+    <div class="icon-wrap">⚖️</div>
+    <div class="summary-text">
+      <div class="clausula">Cláusula 11</div>
+      <div class="titulo">Legislação Aplicável e Foro</div>
+    </div>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="body"><p>Estes Termos são regidos pelas leis da República Federativa do Brasil, em especial:
+
+• Lei nº 13.709/2018 (LGPD);
+• Lei nº 12.965/2014 (Marco Civil da Internet);
+• Código de Defesa do Consumidor (Lei nº 8.078/1990).
+
+Disputas serão submetidas ao foro do município onde o serviço é prestado.</p></div>
+</details>
+
+<div class="aviso-aceitacao">
+  ℹ️ O uso contínuo do aplicativo implica na aceitação integral destes termos de uso.
+</div>
+
+<a class="nav-link" href="privacidade.html">🛡️ Ver Política de Privacidade →</a>
+
+<footer>
+  <p>Última atualização: 07 de Abril de 2026</p>
+  <p style="margin-top:6px;">Eu Amo, Eu Cuido — Termos de Uso v2.0</p>
+</footer>
+
+</body>
+</html>
